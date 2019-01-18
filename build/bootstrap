@@ -1,0 +1,17 @@
+#!/bin/bash
+
+hname=`hostname`
+
+echo "Bootstraping for host: ${hname}"
+
+if [ ${hname} = "tomi" ]; then
+  BASE_DIR=/space/install
+elif [ ${hname} = "cae" ]; then
+  BASE_DIR=/mnt/space/install
+elif [ ${hname} = "foo" ]; then
+  BASE_DIR=/mnt/space/putanowr/install/femdk
+elif [ ${hname} = "romdeb" ]; then
+  BASE_DIR=/mnt/space/install
+fi
+
+cmake ../ -DBASE_DIR=${BASE_DIR}

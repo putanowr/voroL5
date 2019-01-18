@@ -1,0 +1,6 @@
+[submodule "externals/easylogging"]
+	path = externals/easylogging
+	url = https://github.com/muflihun/easyloggingpp.git
+[submodule "externals/tclap"]
+	path = externals/tclap
+	url = git://git.code.sf.net/p/tclap/code
